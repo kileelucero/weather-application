@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hows the Weather?</title>
+    <link rel="webpage icon" href="./images/mza_864317397316930206.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link
+      rel="fontEffect"
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=font-effect-fire-animation"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar is-info">
+      <header class="font-effect-fire-animation">Weather Forecast</header>
+    </nav>
+    <section class="hero" id='hero'>
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-one-fourth">
+            <article class="panel is-warning">
+              <div class="panel-block">
+                <p class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Search" />
+                  <span class="icon is-left">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                  </span>
+                </p>
+              </div>
+              <a class="panel-block" id="bali"> Ulu Watu, Bali </a>
+              <a class="panel-block" id="costaRica"> Playa Grande, Costa Rica </a>
+              <a class="panel-block" id='southAfrica'> Jeffreys Bay, South Africa </a>
+              <a class="panel-block" id='huntingtonBeach'> Huntington Beach, California </a>
+              <a class="panel-block" id='sanClemente'> San Clemente, California </a>
+              <a class="panel-block" id='tahiti'> Teahupo'o, Tahiti </a>
+              <a class="panel-block" id='fiji'> Tavarua Island, Fiji </a>
+            </article>
+          </div>
+          <div class="columns" id="results">
+            <div class="column is-three-fifths">
+              <div class="card">
+                <div class="card-content">
+                  <li class='displayedCity'>Some Place</li>
+                  <ul class='displayedWeather'></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+  ></script>
+  <script src="script.js"></script>
+</html>

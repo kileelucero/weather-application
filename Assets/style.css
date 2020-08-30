@@ -1,0 +1,33 @@
+.font-effect-fire-animation {
+    font-family: 'Rancho', serif;
+    font-size: 50px;
+    text-shadow: 4px 4px 4px gray;
+    text-align: center;
+}
+
+header {
+    color: black;
+}
+
+a {
+    box-sizing: content-box;
+    height: 4rem;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Rancho', serif;
+    text-shadow: 4px 4px 4px gray;
+}
+
+p {
+    box-sizing: content-box;
+    height: 4rem;
+}
+
+.panel {
+    background-color: whitesmoke;
+}
+
+#hero {
+    flex-flow: row wrap;
+    background-image: url('./images/3016601.jpg')
+}
