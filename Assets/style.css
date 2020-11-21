@@ -1,33 +1,71 @@
-.font-effect-fire-animation {
-    font-family: 'Rancho', serif;
-    font-size: 50px;
-    text-shadow: 4px 4px 4px gray;
-    text-align: center;
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
-header {
-    color: black;
+.jumbotron {
+  margin: 15px;
+  float: center;
+  background: linear-gradient(45deg, white, #D3D22C, #27dbb1, #24aadb, #2C2DD3);
+  background-size: 300% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  font-family: 'Rancho', sans-serif;
 }
 
-a {
-    box-sizing: content-box;
-    height: 4rem;
-    font-size: 35px;
-    font-weight: 700;
-    font-family: 'Rancho', serif;
-    text-shadow: 4px 4px 4px gray;
+.row {
+  background: linear-gradient(45deg, white, #27dbb1);
+  background-size: 200% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  border-radius: .25em;
+  padding: .5em;
+  font-family: 'Rancho', sans-serif;
 }
 
-p {
-    box-sizing: content-box;
-    height: 4rem;
+#weatherButton, input {
+  border-radius: .25em;
+  background: linear-gradient(45deg, white, #24aadb);
+  background-size: 200% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  border-radius: .25em;
+  padding: .5em;
+  font-family: 'Rancho', sans-serif;
 }
 
-.panel {
-    background-color: whitesmoke;
+#footer {
+  margin: 5px 5px 0px 5px;
+  float: center;
+  background: linear-gradient(45deg, white, #D3D22C, #27dbb1, #24aadb, #2C2DD3);
+  background-size: 300% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  font-family: 'Rancho', sans-serif;
 }
 
-#hero {
-    flex-flow: row wrap;
-    background-image: url('./images/3016601.jpg')
+body {
+  background-image: url("./images/3016601.jpg");
+  flex-wrap: wrap;
+}
+
+#pipelineHi, #superTubes, #teahuTah, #uluKuta, input, #weatherButton {
+  border-radius: .25em;
+  background: linear-gradient(45deg, white, #24aadb);
+  background-size: 200% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  border-radius: .25em;
+  padding: .5em;
+  font-family: 'Rancho', sans-serif;
+  margin: .25em;
+}
+
+button:not(#weatherButton) {
+  display:block;
+  width:100%;
 }
