@@ -101,9 +101,11 @@ $(document).ready(function() {
     
     //Weather Forecast Function
     function weatherForecast(city){
+       console.log(city)
+        console.log(`https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + apiKey + "&units=imperial`)
         //Ajax call to Get Forecast
         $.ajax({
-            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + apiKey + "&units=imperial",
+            url: `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`,
             method: "GET"
         }).then(function(response){
             //Response of Ajax call
@@ -120,7 +122,7 @@ $(document).ready(function() {
         }).then(function(response){
             //Response of Ajax call
             console.log(response)
-            weatherForecast(response)
+            weatherForecast(response.name)
             uvIndex(response.coord.lat, response.coord.lon)
             //Variable for city searched response
             var title=$("<h3>").text(response.name);
