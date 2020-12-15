@@ -7,6 +7,23 @@
   }
 }
 
+#weather-forecast {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+li, .card {
+  background: linear-gradient(45deg, white, #24aadb);
+  background-size: 200% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  font-family: 'Rancho', sans-serif;
+  display: flex;
+  flex-grow: 1;
+}
+
 .jumbotron {
   margin: 15px;
   float: center;
@@ -17,7 +34,7 @@
   font-family: 'Rancho', sans-serif;
 }
 
-.row {
+.row:not(#forecastRow) {
   background: linear-gradient(45deg, white, #27dbb1);
   background-size: 200% 100%;
   animation: gradient 16s linear infinite;
